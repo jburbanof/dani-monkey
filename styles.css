@@ -3,31 +3,18 @@
   padding: 0;
 }
 
-#landing {
-  width: 100%;
-  height: 100vh;
-}
-
-#landing #navBar {
+#navBar {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-shadow: 0px 0px 5px 0px #000000;
           box-shadow: 0px 0px 5px 0px #000000;
-  height: 70px;
 }
 
-#landing #navBar .navButtons {
+#navBar .navButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,14 +24,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
-#landing #navBar .navButtons .navButton {
-  margin: 0 20px;
+#navBar .navButtons .navButton {
   -webkit-box-shadow: inset 0px 1px 0px 0px #276873;
           box-shadow: inset 0px 1px 0px 0px #276873;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #599bb3), to(#408c99));
@@ -62,14 +44,98 @@
   text-shadow: 0px 1px 0px #3d768a;
 }
 
-#landing #navBar .navButtons .navButton:hover {
+#navBar .navButtons .navButton:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #408c99), to(#599bb3));
   background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
   background-color: #408c99;
 }
 
-#landing #navBar .navButtons .navButton:active {
+#navBar .navButtons .navButton:active {
   position: relative;
   top: 1px;
+}
+
+.horizontalNavBar {
+  width: 100%;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.horizontalNavBar .navButtons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.verticalNavBar {
+  width: 150px;
+  height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
+}
+
+.verticalNavBar .navButtons {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.verticalNavBar .navButtons .navButton {
+  margin: 10px 0;
+}
+
+#landing {
+  width: 100%;
+  height: 100vh;
+}
+
+.section {
+  border-top: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50vh;
+}
+
+.section .sidebar {
+  width: 150px;
+  position: relative;
+  float: left;
+  top: 0px;
+  bottom: 0px;
+  border-right: 1px solid black;
+}
+
+.section .sectionContent {
+  width: calc(100% - 150px);
 }
 /*# sourceMappingURL=styles.css.map */
