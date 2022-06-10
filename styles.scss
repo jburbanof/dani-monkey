@@ -1,89 +1,201 @@
+$details-color: #ffd046;
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+	background: $bcolor;
+	-webkit-mask: url($url);
+	mask: url($url);
+	-webkit-mask-size: $x1 $y1;
+	mask-size: $x1 $y1;
+	border: $bor;
+	color: $col;
+}
 * {
 	margin: 0;
 	padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+main {
+	padding: 0 20px;
 }
 #navBar {
+	background-color: white;
 	position: fixed;
 	top: 0;
 	left: 0;
 	display: flex;
 	box-shadow: 0px 0px 5px 0px #000000;
+	width: 100%;
+	height: 130px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	box-sizing: border-box;
 	.navButtons {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		.navButton {
-			
-			box-shadow: inset 0px 1px 0px 0px #276873;
-			background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-			background-color: #599bb3;
-			border-radius: 3px;
-			border: 1px solid #29668f;
-			display: inline-block;
-			cursor: pointer;
-			color: #ffffff;
-			font-family: Arial;
-			font-size: 13px;
-			padding: 6px 24px;
-			text-decoration: none;
-			text-shadow: 0px 1px 0px #3d768a;
-		}
-		.navButton:hover {
-			background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-			background-color: #408c99;
-		}
-		.navButton:active {
 			position: relative;
-			top: 1px;
+			width: 100px;
+			height: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			border: 1px solid $details-color;
+			font-weight: 300;
+			transition: 0.5s;
+			letter-spacing: 1px;
+			border-radius: 8px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 10px;
+			button {
+				width: 101%;
+				height: 100%;
+				font-weight: 300;
+				font-size: 16px;
+				letter-spacing: 1px;
+				font-weight: bold;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include button(
+					white,
+					"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+					3000%,
+					100%,
+					none,
+					#000
+				);
+				cursor: pointer;
+				-webkit-animation: ani2 0.7s steps(29) forwards;
+				animation: ani2 0.7s steps(29) forwards;
+
+				&:hover {
+					-webkit-animation: ani 0.7s steps(29) forwards;
+					animation: ani 0.7s steps(29) forwards;
+				}
+			}
+		}
+
+		.mas {
+            height: 100%;
+            background-color: $details-color;
+			color: #000;
+			text-align: center;
+			width: 100%;
+			font-weight: 300;
+			position: absolute;
+			overflow: hidden;
+			font-weight: bold;
+            padding-top: 11px
+		}
+
+		@-webkit-keyframes ani {
+			from {
+				-webkit-mask-position: 0 0;
+				mask-position: 0 0;
+			}
+
+			to {
+				-webkit-mask-position: 100% 0;
+				mask-position: 100% 0;
+			}
+		}
+
+		@keyframes ani {
+			from {
+				-webkit-mask-position: 0 0;
+				mask-position: 0 0;
+			}
+
+			to {
+				-webkit-mask-position: 100% 0;
+				mask-position: 100% 0;
+			}
+		}
+
+		@-webkit-keyframes ani2 {
+			from {
+				-webkit-mask-position: 100% 0;
+				mask-position: 100% 0;
+			}
+
+			to {
+				-webkit-mask-position: 0 0;
+				mask-position: 0 0;
+			}
+		}
+
+		@keyframes ani2 {
+			from {
+				-webkit-mask-position: 100% 0;
+				mask-position: 100% 0;
+			}
+
+			to {
+				-webkit-mask-position: 0 0;
+				mask-position: 0 0;
+			}
 		}
 	}
 }
-.horizontalNavBar {
-	width: 100%;
-	height: 70px;
+.section {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: start;
 	align-items: center;
-	justify-content: space-between;
-    padding: 0 20px;
-    box-sizing: border-box;
-	.navButtons {
-		flex-direction: row;
-	}
-}
-.verticalNavBar {
-	width: 150px;
-	height: 250px;
-	align-items: center;
-	justify-content: space-around;
-    flex-direction: column;
-    padding: 20px 0;
-	.navButtons {
-		width: 100%;
-		flex-direction: column;
-        .navButton {
-            margin: 10px 0;
-        }
+	flex-direction: column;
+	padding: 20px;
+	margin: 10px 0;
+	.title {
+		background-color: $details-color;
+		padding: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.3);
 	}
 }
 #landing {
 	width: 100%;
-	height: 100vh;
-}
-.section {
-	border-top: 1px solid black;
+	height: calc(100vh - 130px);
+	margin-top: 130px;
+	padding: 0 50px;
+	box-sizing: border-box;
 	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
+	justify-content: center;
+	align-items: center;
 	flex-direction: row;
-	height: 50vh;
-	.sidebar {
-		width: 150px;
-		position: relative;
-		float: left;
-		top: 0px;
-		bottom: 0px;
-		border-right: 1px solid black;
+	#intro {
+		margin-left: 50px;
+		p {
+			margin: 50px 0;
+		}
 	}
-	.sectionContent {
-		width: calc(100% - 150px);
+}
+.projectsLinks {
+	width: 80%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	div {
+		margin: 20px;
+	}
+}
+.collectiveLinks {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 100px;
+	.collectiveLink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 }
