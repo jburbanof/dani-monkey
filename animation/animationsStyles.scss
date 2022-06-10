@@ -1,6 +1,5 @@
-$details-color: #ffd046;
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
-
+$details-color: #ffd046;
 @mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
 	background: $bcolor;
 	-webkit-mask: url($url);
@@ -13,34 +12,36 @@ $details-color: #ffd046;
 * {
 	margin: 0;
 	padding: 0;
-    font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
-main {
-	padding: 0 20px;
+
+.title {
+	background-color: $details-color;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 #navBar {
 	background-color: white;
-	position: fixed;
-	top: 0;
-	left: 0;
 	display: flex;
 	box-shadow: 0px 0px 5px 0px #000000;
-	width: 100%;
-	height: 130px;
+	width: 150px;
 	align-items: center;
-	justify-content: space-between;
-	padding: 0 20px;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 20px 0;
 	box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
 	.navButtons {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		.navButton {
 			position: relative;
 			width: 100px;
 			height: 30px;
-			margin-left: auto;
-			margin-right: auto;
 			overflow: hidden;
 			border: 1px solid $details-color;
 			font-weight: 300;
@@ -50,7 +51,7 @@ main {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin: 0 10px;
+			margin: 5px 0;
 			button {
 				width: 101%;
 				height: 100%;
@@ -81,8 +82,8 @@ main {
 		}
 
 		.mas {
-            height: 100%;
-            background-color: $details-color;
+			height: 100%;
+			background-color: $details-color;
 			color: #000;
 			text-align: center;
 			width: 100%;
@@ -90,7 +91,7 @@ main {
 			position: absolute;
 			overflow: hidden;
 			font-weight: bold;
-            padding-top: 11px
+			padding-top: 11px;
 		}
 
 		@-webkit-keyframes ani {
@@ -142,58 +143,27 @@ main {
 		}
 	}
 }
-.section {
-	border: 1px solid rgba(0, 0, 0, 0.3);
+main {
+	width: calc(100% - 150px);
+    margin-left: 150px;
+	padding: 20px 40px;
+    box-sizing: border-box;
 	display: flex;
 	justify-content: start;
 	align-items: center;
 	flex-direction: column;
-	padding: 20px;
-	margin: 10px 0;
-	.title {
-		background-color: $details-color;
-		padding: 10px;
-		border: 1px solid rgba(0, 0, 0, 0.3);
-	}
 }
-#landing {
-	width: 100%;
-	height: calc(100vh - 130px);
-	margin-top: 130px;
-	padding: 0 50px;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	#intro {
-		margin-left: 50px;
-		p {
-			margin: 50px 0;
-		}
-	}
-}
-.projectsLinks {
-	width: 80%;
-	margin-top: 20px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	div {
-		margin: 20px;
-	}
-}
-.collectiveLinks {
-	margin-top: 20px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 100px;
-	.collectiveLink {
+.animation {
+	.animationInfo {
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+		align-items: start;
+		flex-direction: row;
+        margin: 40px 0 20px;
+        h2 {
+            margin-right: 40px;
+            max-width: 200px;
+            word-wrap: break-word;
+        }
 	}
 }
