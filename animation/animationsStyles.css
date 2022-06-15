@@ -53,34 +53,26 @@
 }
 
 #navBar .navButtons .navButton {
-  position: relative;
+  /* position: relative; */
   width: 100px;
   height: 30px;
   overflow: hidden;
-  border: 1px solid #ffd046;
+  /* border: 1px solid $details-color; */
   font-weight: 300;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  letter-spacing: 1px;
   border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* display: flex;
+			justify-content: center;
+			align-items: center; */
   margin: 5px 0;
 }
 
 #navBar .navButtons .navButton button {
-  width: 101%;
+  width: 100%;
   height: 100%;
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: 1px;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
