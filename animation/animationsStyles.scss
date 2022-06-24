@@ -1,167 +1,122 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
 $details-color: #ffd046;
-@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
-	background: $bcolor;
-	-webkit-mask: url($url);
-	mask: url($url);
-	-webkit-mask-size: $x1 $y1;
-	mask-size: $x1 $y1;
-	border: $bor;
-	color: $col;
-}
 * {
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", sans-serif;
 }
 
-.title {
-	background-color: $details-color;
-	padding: 5px 10px;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-}
-#navBar {
-	background-color: white;
+.container {
+	background-color: #dfe0e2;
+	background-image: url("../assets/Animation_Render/Monkeyprofile_03_V02.png");
+	background-size: 300px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
 	display: flex;
-	box-shadow: 0px 0px 5px 0px #000000;
-	width: 150px;
-	align-items: center;
-	justify-content: space-around;
-	flex-direction: column;
-	padding: 20px 0;
-	box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-	.navButtons {
+	justify-content: space-between;
+	align-items: start;
+	flex-direction: row;
+	overflow: hidden;
+	.sidePanel {
+		height: 100%;
+		width: 200px;
 		display: flex;
-		justify-content: center;
+		justify-content: start;
 		align-items: center;
 		flex-direction: column;
-		.navButton {
-			/* position: relative; */
-			width: 100px;
-			height: 30px;
-			overflow: hidden;
-			/* border: 1px solid $details-color; */
-			font-weight: 300;
-			transition: 0.5s;
-			border-radius: 8px;
-			/* display: flex;
-			justify-content: center;
-			align-items: center; */
-			margin: 5px 0;
-			button {
-				width: 100%;
-				height: 100%;
-				font-weight: 300;
-				font-size: 16px;
-				font-weight: bold;
+		#navBar {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: space-between;
+			box-sizing: border-box;
+			flex-direction: column;
+			padding-top: 40px;
+			margin-bottom: 40px;
+			.navButtons {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				@include button(
-					white,
-					"https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
-					3000%,
-					100%,
-					none,
-					#000
-				);
-				cursor: pointer;
-				-webkit-animation: ani2 0.7s steps(29) forwards;
-				animation: ani2 0.7s steps(29) forwards;
-
-				&:hover {
-					-webkit-animation: ani 0.7s steps(29) forwards;
-					animation: ani 0.7s steps(29) forwards;
+				list-style-type: none;
+				margin-top: 40px;
+				flex-direction: column;
+				.button {
+					display: flex;
+					justify-content: center;
+					align-items: end;
+					flex-direction: column;
+					margin: 2px 0;
+					img {
+						width: 175px;
+						margin: 0 5px;
+					}
 				}
 			}
 		}
-
-		.mas {
-			height: 100%;
-			background-color: $details-color;
-			color: #000;
-			text-align: center;
+		a {
 			width: 100%;
-			font-weight: 300;
-			position: absolute;
-			overflow: hidden;
-			font-weight: bold;
-			padding-top: 11px;
-		}
-
-		@-webkit-keyframes ani {
-			from {
-				-webkit-mask-position: 0 0;
-				mask-position: 0 0;
-			}
-
-			to {
-				-webkit-mask-position: 100% 0;
-				mask-position: 100% 0;
-			}
-		}
-
-		@keyframes ani {
-			from {
-				-webkit-mask-position: 0 0;
-				mask-position: 0 0;
-			}
-
-			to {
-				-webkit-mask-position: 100% 0;
-				mask-position: 100% 0;
-			}
-		}
-
-		@-webkit-keyframes ani2 {
-			from {
-				-webkit-mask-position: 100% 0;
-				mask-position: 100% 0;
-			}
-
-			to {
-				-webkit-mask-position: 0 0;
-				mask-position: 0 0;
-			}
-		}
-
-		@keyframes ani2 {
-			from {
-				-webkit-mask-position: 100% 0;
-				mask-position: 100% 0;
-			}
-
-			to {
-				-webkit-mask-position: 0 0;
-				mask-position: 0 0;
-			}
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 }
-main {
-	width: calc(100% - 150px);
-    margin-left: 150px;
-	padding: 20px 40px;
-    box-sizing: border-box;
+.content {
+	width: 100%;
 	display: flex;
 	justify-content: start;
 	align-items: center;
 	flex-direction: column;
-}
-.animation {
-	.animationInfo {
+	background-image: url("../assets/GeneralAssets/BG_yellow_Frontpage_01.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	p {
+		padding: 40px;
+	}
+	.header {
+		width: 100%;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		margin-top: 40px;
+	}
+	.project {
 		display: flex;
 		justify-content: center;
-		align-items: start;
-		flex-direction: row;
-        margin: 40px 0 20px;
-        h2 {
-            margin-right: 40px;
-            max-width: 200px;
-            word-wrap: break-word;
-        }
+		align-items: center;
+		flex-direction: column;
+		.projectDescription {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+			height: 150px;
+			padding: 20px;
+			.description {
+				background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: right top;
+				padding: 20px;
+				height: calc(100% - 40px);
+			}
+		}
+		video {
+			width: 560px;
+			height: 349px;
+			background-color: black;
+		}
 	}
+	.last {
+		margin-bottom: 250px;
+	}
+}
+#contact {
+	width: 100%;
+	height: 150px;
+	background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
