@@ -5,164 +5,31 @@
   font-family: "Roboto", sans-serif;
 }
 
-.title {
-  background-color: #ffd046;
-  padding: 5px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-#navBar {
-  background-color: white;
+.container {
+  background-color: #dfe0e2;
+  background-image: url("../assets/Animation_Render/Monkeyprofile_03_V02.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0px 0px 5px 0px #000000;
-          box-shadow: 0px 0px 5px 0px #000000;
-  width: 150px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-#navBar .navButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#navBar .navButtons .navButton {
-  /* position: relative; */
-  width: 100px;
-  height: 30px;
+      -ms-flex-direction: row;
+          flex-direction: row;
   overflow: hidden;
-  /* border: 1px solid $details-color; */
-  font-weight: 300;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-radius: 8px;
-  /* display: flex;
-			justify-content: center;
-			align-items: center; */
-  margin: 5px 0;
 }
 
-#navBar .navButtons .navButton button {
-  width: 100%;
+.container .sidePanel {
   height: 100%;
-  font-weight: 300;
-  font-size: 16px;
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: white;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
-  -webkit-mask-size: 3000% 100%;
-  mask-size: 3000% 100%;
-  border: none;
-  color: #000;
-  cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(29) forwards;
-  animation: ani2 0.7s steps(29) forwards;
-}
-
-#navBar .navButtons .navButton button:hover {
-  -webkit-animation: ani 0.7s steps(29) forwards;
-  animation: ani 0.7s steps(29) forwards;
-}
-
-#navBar .navButtons .mas {
-  height: 100%;
-  background-color: #ffd046;
-  color: #000;
-  text-align: center;
-  width: 100%;
-  font-weight: 300;
-  position: absolute;
-  overflow: hidden;
-  font-weight: bold;
-  padding-top: 11px;
-}
-
-@-webkit-keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-
-@keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-
-@-webkit-keyframes ani2 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-
-@keyframes ani2 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-
-main {
-  width: calc(100% - 150px);
-  margin-left: 150px;
-  padding: 20px 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,26 +45,178 @@ main {
           flex-direction: column;
 }
 
-.animation .animationInfo {
+.container .sidePanel #navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container .sidePanel #navBar .navButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin-top: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sidePanel #navBar .navButtons .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2px 0;
+}
+
+.container .sidePanel #navBar .navButtons .button img {
+  width: 175px;
+  margin: 0 5px;
+}
+
+.container .sidePanel a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../assets/GeneralAssets/BG_yellow_Frontpage_01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content p {
+  padding: 40px;
+}
+
+.content .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.content .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .project .projectDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 40px 0 20px;
+  height: 150px;
+  padding: 20px;
 }
 
-.animation .animationInfo h2 {
-  margin-right: 40px;
-  max-width: 200px;
-  word-wrap: break-word;
+.content .project .projectDescription .description {
+  background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 20px;
+  height: calc(100% - 40px);
+}
+
+.content .project video {
+  width: 560px;
+  height: 349px;
+  background-color: black;
+}
+
+.content .last {
+  margin-bottom: 250px;
+}
+
+#contact {
+  width: 100%;
+  height: 150px;
+  background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=animationsStyles.css.map */
