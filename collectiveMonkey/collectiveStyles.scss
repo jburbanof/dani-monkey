@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-color: #dfe0e2;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-direction: row;
+	overflow: hidden;
+	.sidePanel {
+		height: 100%;
+		width: 200px;
+		background-image: url("../assets/CMonkey_render/Cmonkey_Back_texture_v02.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex-direction: column;
+		#navBar {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: space-between;
+			box-sizing: border-box;
+			flex-direction: column;
+			padding-top: 40px;
+			margin-bottom: 40px;
+			.navButtons {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				list-style-type: none;
+				margin-top: 40px;
+				flex-direction: column;
+				.button {
+					display: flex;
+					justify-content: center;
+					align-items: end;
+					flex-direction: column;
+					margin: 2px 0;
+					img {
+						width: 175px;
+						margin: 0 5px;
+					}
+				}
+			}
+		}
+		a {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	max-height: 100vh;
+	overflow: auto;
+	.description {
+		background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right top;
+		padding: 20px;
+	}
+	header {
+		width: 100%;
+		padding-top: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		flex-direction: row;
+		background-image: url("../assets/CMonkey_render/Cmonkey_Header_Llustration_v02.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+	}
+	.collectiveDescription {
+		width: 50%;
+		padding-right: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+main {
+	width: 100%;
+	.CMProject {
+		width: 100%;
+		padding: 20px;
+		background-image: url("../assets/CMonkey_render/Cmonkey_Main_box_v02.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top right;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+        position: relative;
+		.projectDescription {
+			display: flex;
+			justify-content: center;
+			align-items: stretch;
+			flex-direction: row;
+		}
+		video {
+			background-color: black;
+			margin-top: 40px;
+		}
+		.projectDetails {
+			margin-top: 40px;
+			background-image: url("../assets/CMonkey_render/Cmonkey_textBox_In_box_v02.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: top right;
+			color: white;
+			padding: 20px;
+		}
+		.projectPictures {
+			margin-top: 20px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 50px 70px;
+            margin-bottom: 100px;
+			.projectPicture {
+				width: 300px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+		}
+		.profilePicture {
+			width: 600px;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
