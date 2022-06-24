@@ -5,6 +5,9 @@ $details-color: #faea24;
 	padding: 0;
 	font-family: "Roboto", sans-serif;
 }
+html {
+	scroll-behavior: smooth;
+}
 svg {
 	filter: drop-shadow(3px 5px 2px rgb(0, 0, 0));
 }
@@ -20,36 +23,7 @@ body {
 #brush-shape {
 	color: $details-color;
 }
-#navBar {
-	background-color: #dfe0e2;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	box-shadow: 0px 0px 5px 0px #000000;
-	width: 100%;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 20px;
-	box-sizing: border-box;
-	z-index: 10;
-	.navButtons {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style-type: none;
-		.button {
-			display: flex;
-			justify-content: center;
-			align-items: end;
-			flex-direction: column;
-			img {
-				width: 120px;
-				margin: 0 5px;
-			}
-		}
-	}
-}
+
 .section {
 	display: flex;
 	justify-content: start;
@@ -58,31 +32,60 @@ body {
 }
 #landing {
 	width: 100%;
-	height: calc(100vh - 100px);
-	margin-top: 100px;
+	height: 100vh;
 	padding: 0 50px;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
-	.profileImgContainer {
-		height: 100%;
-		width: 50%;
+	flex-direction: column;
+	#navBar {
 		display: flex;
-		justify-content: center;
+		width: 100%;
 		align-items: end;
-		flex-direction: row;
-		img {
-			width: auto;
-			height: auto;
-			max-height: calc(100vh - 150px);
+		justify-content: space-between;
+		box-sizing: border-box;
+		.navButtons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style-type: none;
+			margin-top: 40px;
+			.button {
+				display: flex;
+				justify-content: center;
+				align-items: end;
+				flex-direction: column;
+				img {
+					width: 175px;
+					margin: 0 5px;
+				}
+			}
 		}
 	}
-	#intro {
-		margin-left: 50px;
-		p {
-			margin: 50px 0;
+	.introContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		.profileImgContainer {
+			height: 100%;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: end;
+			flex-direction: row;
+			img {
+				width: auto;
+				height: auto;
+				max-height: calc(100vh - 150px);
+			}
+		}
+		#intro {
+			margin-left: 50px;
+			p {
+				margin: 50px 0;
+			}
 		}
 	}
 }
@@ -132,6 +135,7 @@ body {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 50px 70px;
+		z-index: 3;
 		.collectiveLink {
 			width: 400px;
 			display: flex;
