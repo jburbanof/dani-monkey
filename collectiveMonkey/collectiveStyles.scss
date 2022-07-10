@@ -110,7 +110,7 @@ main {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-        position: relative;
+		position: relative;
 		.projectDescription {
 			display: flex;
 			justify-content: center;
@@ -135,7 +135,7 @@ main {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			grid-gap: 50px 70px;
-            margin-bottom: 100px;
+			margin-bottom: 100px;
 			.projectPicture {
 				width: 300px;
 				display: flex;
@@ -148,6 +148,47 @@ main {
 			width: 600px;
 			position: absolute;
 			bottom: 0;
+		}
+	}
+}
+#contact {
+	width: 100%;
+	background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.firstRow {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		.contactInfo {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+		}
+		.socialMedia {
+			img {
+				width: 50px;
+			}
+		}
+	}
+	.secondRow {
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		a {
+			color: black;
 		}
 	}
 }

@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+.container {
+	background-color: #dfe0e2;
+	background-image: url("../assets/About_Renders/about_texture_LB01_v02.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-direction: column;
+	overflow: hidden;
+	.headerContainer {
+		background-image: url("../assets/About_Renders/Monkeyprofile_02_V02.png");
+		background-size: 300px;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		flex-direction: row;
+		.sidePanel {
+			height: 100%;
+			width: 350px;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			flex-direction: column;
+			#navBar {
+				display: flex;
+				width: 100%;
+				align-items: center;
+				justify-content: space-between;
+				box-sizing: border-box;
+				flex-direction: column;
+				padding-top: 40px;
+				margin-bottom: 40px;
+				.navButtons {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					list-style-type: none;
+					margin-top: 40px;
+					flex-direction: column;
+					padding: 0;
+					.button {
+						display: flex;
+						justify-content: center;
+						align-items: end;
+						flex-direction: column;
+						margin: 2px 0;
+						img {
+							width: 175px;
+							margin: 0 5px;
+						}
+					}
+				}
+			}
+			a {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.contactInfo {
+			width: 100%;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			flex-direction: column;
+
+			p {
+				padding: 40px;
+			}
+			.header {
+				width: 100%;
+				display: flex;
+				justify-content: end;
+				align-items: center;
+				margin-top: 40px;
+			}
+			.getInContact {
+				width: 70%;
+				.contactImages {
+					display: flex;
+					justify-content: center;
+					align-items: start;
+					flex-direction: rows;
+					.contactLinks {
+						position: relative;
+						width: 50%;
+						.socialMedia {
+							position: absolute;
+							bottom: 5px;
+							left: 0;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-direction: row;
+							padding: 0 20px;
+							img {
+								width: 100%;
+							}
+						}
+					}
+				}
+				.contactForm {
+					height: 400px;
+					background-color: rgb(49, 49, 49);
+				}
+			}
+		}
+	}
+}
+
+.workedIn {
+	width: 100%;
+	background-image: url("../assets/About_Renders/about_Texture_LB03_v02.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px 0;
+	box-sizing: border-box;
+	.productions {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		img {
+			margin: 20px 20px;
+		}
+	}
+}
+.workedWith {
+	width: 100%;
+	background-image: url("../assets/About_Renders/about_Texture_LB04_v02.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px 0;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	.logos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		img {
+			margin: 20px 20px;
+		}
+	}
+}
+#contact {
+	width: 100%;
+	background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.firstRow {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		.contactInfo {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+		}
+		.socialMedia {
+			img {
+				width: 50px;
+			}
+		}
+	}
+	.secondRow {
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		a {
+			color: black;
+		}
+	}
+}
