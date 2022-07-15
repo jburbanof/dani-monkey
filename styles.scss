@@ -1,9 +1,10 @@
 $details-color: #faea24;
-@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: "Cousine", monospace;
+	color: #353533;
 }
 html {
 	scroll-behavior: smooth;
@@ -45,22 +46,31 @@ body {
 		align-items: end;
 		justify-content: space-between;
 		box-sizing: border-box;
+		.dmLogo {
+			width: 230px;
+		}
 		.navButtons {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			list-style-type: none;
-			margin-top: 40px;
+			margin-top: 10px;
 			.button {
 				display: flex;
 				justify-content: center;
 				align-items: end;
 				flex-direction: column;
 				img {
-					width: 175px;
+					width: 150px;
 					margin: 0 5px;
 				}
 			}
+		}
+		#openResponsiveMenu {
+			display: none;
+		}
+		.responsiveMenu {
+			display: none;
 		}
 	}
 	.introContainer {
@@ -161,7 +171,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column; 
+	flex-direction: column;
 	.firstRow {
 		width: 100%;
 		display: flex;
@@ -172,7 +182,7 @@ body {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			flex-direction: row
+			flex-direction: row;
 		}
 		.socialMedia {
 			img {
@@ -181,13 +191,146 @@ body {
 		}
 	}
 	.secondRow {
-		margin-top:100px;
+		margin-top: 100px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		a {
-			color: black
+			color: black;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	* {
+		overflow-x: hidden;
+	}
+	#landing {
+		height: unset;
+		padding: 0px;
+		justify-content: start;
+		#navBar {
+			position: relative;
+			box-sizing: border-box;
+			padding: 20px;
+			.dmLogo {
+				width: 180px;
+			}
+			.navButtons {
+				display: none;
+			}
+			#openResponsiveMenu {
+				display: unset;
+				background: none;
+				color: inherit;
+				border: none;
+				padding: 0;
+				font: inherit;
+				cursor: pointer;
+				outline: inherit;
+				img {
+					width: 100px;
+				}
+			}
+			.responsiveMenu {
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				width: 100vw;
+				height: 100vh;
+				background-color: #dfe0e2;
+				display: none;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				z-index: 4;
+				.navButtons {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					list-style-type: none;
+					margin-top: 40px;
+					.button {
+						margin: 20px 0;
+						display: flex;
+						justify-content: center;
+						align-items: end;
+						flex-direction: column;
+						img {
+							width: 175px;
+							margin: 0 5px;
+						}
+					}
+				}
+				#closeResponsiveMenu {
+					position: absolute;
+					top: 28px;
+					left: 20px;
+					display: unset;
+					background: none;
+					color: inherit;
+					border: none;
+					padding: 0;
+					font: inherit;
+					cursor: pointer;
+					outline: inherit;
+					img {
+						width: 100px;
+					}
+				}
+			}
+		}
+		.introContainer {
+			flex-direction: column;
+			.profileImgContainer {
+				width: 80%;
+			}
+			#intro {
+				width: 100%;
+				margin-left: unset;
+				padding: 0 50px;
+				box-sizing: border-box;
+				border-top: 20px solid black;
+			}
+		}
+	}
+	#portfolio {
+		.projectsLinks {
+			.portfolioLink {
+				width: 300px;
+				margin: 50px;
+			}
+		}
+	}
+	#collective {
+		position: relative;
+		padding-bottom: 250px;
+		.sectionHeader {
+			overflow-x: unset;
+			z-index: 4;
+		}
+		.collectiveLinks {
+			margin-top: 90px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 50px;
+			z-index: 3;
+			.collectiveLink {
+				width: 300px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+		}
+		.profilePicture {
+			width: 600px;
+			position: absolute;
+			bottom: 0;
 		}
 	}
 }

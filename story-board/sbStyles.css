@@ -3,25 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-  /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: #fbea2c;
-  /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: black;
-  /* color of the scroll thumb */
-  border-radius: 20px;
-  /* roundness of the scroll thumb */
-  border: 3px solid trasnparent;
-  /* creates padding around scroll thumb */
+  color: #373637;
 }
 
 body {
@@ -33,6 +15,7 @@ body {
 }
 
 .container {
+  width: 100%;
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -53,7 +36,6 @@ body {
 }
 
 .container .sidePanel {
-  height: 100%;
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,6 +71,14 @@ body {
           flex-direction: column;
   padding-top: 40px;
   margin-bottom: 40px;
+}
+
+.container .sidePanel #navBar #openResponsiveMenu {
+  display: none;
+}
+
+.container .sidePanel #navBar .responsiveMenu {
+  display: none;
 }
 
 .container .sidePanel #navBar .navButtons {
@@ -180,6 +170,8 @@ body {
 }
 
 .content .project {
+  width: calc(100% - 80px);
+  max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,5 +324,142 @@ body {
 
 #contact .secondRow a {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .sidePanel {
+    width: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container .sidePanel #navBar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .container .sidePanel #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .sidePanel #navBar #openResponsiveMenu img {
+    width: 100px;
+  }
+  .container .sidePanel #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 4;
+  }
+  .container .sidePanel #navBar .responsiveMenu .navButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+  }
+  .container .sidePanel #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .sidePanel #navBar .responsiveMenu .navButtons .button img {
+    width: 175px;
+    margin: 0 5px;
+  }
+  .container .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .sidePanel #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 100px;
+  }
+  .container .sidePanel #navBar .navButtons {
+    display: none;
+  }
+  .container .sidePanel a {
+    width: unset;
+  }
+  .content {
+    background-image: unset;
+  }
+  .content .project {
+    width: 90%;
+  }
+  .content .project .projectDescription {
+    width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: unset;
+  }
+  .content .project .projectDescription img {
+    width: 100%;
+  }
+  .content .project .projectDescription .description {
+    margin: 20px 0;
+  }
 }
 /*# sourceMappingURL=sbStyles.css.map */
