@@ -81,7 +81,7 @@ body {
 }
 
 #landing #navBar .dmLogo {
-  width: 230px;
+  width: 180px;
 }
 
 #landing #navBar .navButtons {
@@ -115,7 +115,7 @@ body {
 }
 
 #landing #navBar .navButtons .button img {
-  width: 150px;
+  width: 130px;
   margin: 0 5px;
 }
 
@@ -286,7 +286,7 @@ body {
 
 #contact {
   width: 100%;
-  background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+  background-image: url("./assets/Frontpage_Renders/Button_V02.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,11 +341,30 @@ body {
           flex-direction: row;
 }
 
+#contact .firstRow .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #contact .firstRow .socialMedia img {
   width: 50px;
 }
 
 #contact .secondRow {
+  font-size: 12px;
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,6 +554,18 @@ body {
     width: 600px;
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #landing {
+    padding: 0;
+  }
+  #landing .dmLogo {
+    width: 180px !important;
+  }
+  #landing .button img {
+    width: 130px !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
