@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+
 $details-color: #ffd046;
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: "Cousine", monospace;
+	color: #353533;
 }
-
 .container {
 	background-color: #dfe0e2;
 	background-image: url("../assets/Animation_Render/Monkeyprofile_03_V02.png");
@@ -108,9 +109,10 @@ $details-color: #ffd046;
 			}
 		}
 		video {
-			width: 560px;
-			height: 349px;
+			width: 90%;
+			max-width: 600px;
 			background-color: black;
+			margin: 40px 0;
 		}
 	}
 	.last {
@@ -142,12 +144,18 @@ $details-color: #ffd046;
 			flex-direction: row;
 		}
 		.socialMedia {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
 			img {
 				width: 50px;
 			}
 		}
 	}
 	.secondRow {
+		font-size: 12px;
 		margin-top: 100px;
 		display: flex;
 		justify-content: center;
