@@ -21,10 +21,6 @@ body {
 	background-size: cover;
 }
 
-#brush-shape {
-	color: $details-color;
-}
-
 .section {
 	display: flex;
 	justify-content: start;
@@ -40,6 +36,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	margin-top: 60px;
 	#navBar {
 		display: flex;
 		width: 100%;

@@ -24,10 +24,6 @@ body {
   background-size: cover;
 }
 
-#brush-shape {
-  color: #faea24;
-}
-
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +59,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 60px;
 }
 
 #landing #navBar {
