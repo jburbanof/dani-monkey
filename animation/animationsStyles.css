@@ -8,7 +8,7 @@
 
 .container {
   background-color: #dfe0e2;
-  background-image: url("../assets/Animation_Render/Monkeyprofile_03_V02.png");
+  background-image: url("../assets/Animation_Render/monkeyprofile_03_v02_optimized.png");
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -145,8 +145,9 @@
   background-position: center;
 }
 
-.content p {
-  padding: 40px;
+.content .sectionDescription p {
+  padding: 15px 40px;
+  font-size: 20px;
 }
 
 .content .header {
@@ -408,7 +409,7 @@
             flex-direction: column;
   }
   .container .sidePanel #navBar .responsiveMenu .navButtons .button img {
-    width: 175px;
+    width: 250px;
     margin: 0 5px;
   }
   .container .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {

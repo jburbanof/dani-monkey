@@ -9,7 +9,7 @@ $details-color: #ffd046;
 }
 .container {
 	background-color: #dfe0e2;
-	background-image: url("../assets/Animation_Render/Monkeyprofile_03_V02.png");
+	background-image: url("../assets/Animation_Render/monkeyprofile_03_v02_optimized.png");
 	background-size: 300px;
 	background-repeat: no-repeat;
 	background-position: left bottom;
@@ -77,9 +77,13 @@ $details-color: #ffd046;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	p {
-		padding: 40px;
+	.sectionDescription {
+		p {
+			padding: 15px 40px;
+			font-size: 20px;
+		}
 	}
+
 	.header {
 		width: 100%;
 		display: flex;
@@ -218,7 +222,7 @@ $details-color: #ffd046;
 							align-items: end;
 							flex-direction: column;
 							img {
-								width: 175px;
+								width: 250px;
 								margin: 0 5px;
 							}
 						}
@@ -241,7 +245,7 @@ $details-color: #ffd046;
 					}
 				}
 				.navButtons {
-					display: none
+					display: none;
 				}
 			}
 			a {

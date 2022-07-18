@@ -36,7 +36,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 60px;
 	#navBar {
 		display: flex;
 		width: 100%;
@@ -91,7 +90,8 @@ body {
 		#intro {
 			margin-left: 50px;
 			p {
-				margin: 50px 0;
+				margin: 50px;
+				font-size: 20px;
 			}
 		}
 	}
@@ -264,7 +264,7 @@ body {
 						align-items: end;
 						flex-direction: column;
 						img {
-							width: 175px;
+							width: 250px !important;
 							margin: 0 5px;
 						}
 					}

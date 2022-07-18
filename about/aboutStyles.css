@@ -29,7 +29,7 @@
 }
 
 .container .headerContainer {
-  background-image: url("../assets/About_Renders/Monkeyprofile_02_V02.png");
+  background-image: url("../assets/About_Renders/monkeyprofile_02_v02_optimized.png");
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -132,7 +132,7 @@
 }
 
 .container .headerContainer .sidePanel #navBar .navButtons .button img {
-  width: 175px;
+  width: 180px;
   margin: 0 5px;
 }
 
@@ -166,8 +166,9 @@
           flex-direction: column;
 }
 
-.container .headerContainer .contactInfo p {
-  padding: 40px;
+.container .headerContainer .contactInfo .profile p {
+  font-size: 20px;
+  padding: 15px 40px;
 }
 
 .container .headerContainer .contactInfo .header {
@@ -211,27 +212,55 @@
 }
 
 .container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia {
+  width: 100%;
   position: absolute;
   bottom: 5px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 0 20px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia a {
+  width: calc(33% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 50%;
 }
 
 .container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia img {
   width: 100%;
+  margin: 0 5px;
+}
+
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia a:hover {
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  width: calc(33% - 10px);
 }
 
 .container .headerContainer .contactInfo .getInContact .contactForm {
@@ -274,6 +303,7 @@
 .container .headerContainer .contactInfo .getInContact .contactForm #submit {
   cursor: pointer;
   border: none;
+  background-color: #faea24;
 }
 
 .workedIn {
@@ -564,7 +594,7 @@
             flex-direction: column;
   }
   .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons .button img {
-    width: 175px;
+    width: 250px;
     margin: 0 5px;
   }
   .container .headerContainer .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {

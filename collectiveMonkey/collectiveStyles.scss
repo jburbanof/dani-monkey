@@ -8,6 +8,7 @@
 	color: #353533;
 }
 body {
+	overflow-x: hidden;
 	height: 100vh;
 	background-color: #dfe0e2;
 	display: flex;
@@ -77,6 +78,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	max-height: 100vh;
+	overflow: auto;
 	.projectsMenu {
 		display: none;
 	}
@@ -86,6 +88,9 @@ body {
 		background-repeat: no-repeat;
 		background-position: right top;
 		padding: 20px;
+		p {
+			margin: 10px 0;
+		}
 	}
 	#header {
 		width: 100%;
@@ -94,7 +99,7 @@ body {
 		justify-content: center;
 		align-items: start;
 		flex-direction: row;
-		background-image: url("../assets/CMonkey_render/Cmonkey_Header_Llustration_v02.png");
+		background-image: url("../assets/CMonkey_render/cmonkey_header_llustration_v02_optimized.png");
 		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: bottom right;
@@ -218,7 +223,7 @@ main {
 		}
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	body {
 		flex-direction: column;
 		height: unset;
@@ -278,7 +283,7 @@ main {
 							align-items: end;
 							flex-direction: column;
 							img {
-								width: 175px;
+								width: 250px;
 								margin: 0 5px;
 							}
 						}
@@ -309,6 +314,7 @@ main {
 			}
 		}
 		.content {
+			overflow: unset;
 			#header {
 				display: none;
 			}
