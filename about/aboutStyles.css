@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cousine", monospace;
+  color: #353533;
 }
 
 .container {
@@ -27,7 +29,7 @@
 }
 
 .container .headerContainer {
-  background-image: url("../assets/About_Renders/Monkeyprofile_02_V02.png");
+  background-image: url("../assets/About_Renders/monkeyprofile_02_v02_optimized.png");
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -85,6 +87,14 @@
   margin-bottom: 40px;
 }
 
+.container .headerContainer .sidePanel #navBar #openResponsiveMenu {
+  display: none;
+}
+
+.container .headerContainer .sidePanel #navBar .responsiveMenu {
+  display: none;
+}
+
 .container .headerContainer .sidePanel #navBar .navButtons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,7 +132,7 @@
 }
 
 .container .headerContainer .sidePanel #navBar .navButtons .button img {
-  width: 175px;
+  width: 180px;
   margin: 0 5px;
 }
 
@@ -156,8 +166,9 @@
           flex-direction: column;
 }
 
-.container .headerContainer .contactInfo p {
-  padding: 40px;
+.container .headerContainer .contactInfo .profile p {
+  font-size: 20px;
+  padding: 15px 40px;
 }
 
 .container .headerContainer .contactInfo .header {
@@ -176,6 +187,7 @@
 
 .container .headerContainer .contactInfo .getInContact {
   width: 70%;
+  margin-bottom: 40px;
 }
 
 .container .headerContainer .contactInfo .getInContact .contactImages {
@@ -200,9 +212,59 @@
 }
 
 .container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia {
+  width: 100%;
   position: absolute;
   bottom: 5px;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia a {
+  width: calc(33% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 50%;
+}
+
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia img {
+  width: 100%;
+  margin: 0 5px;
+}
+
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia a:hover {
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  width: calc(33% - 10px);
+}
+
+.container .headerContainer .contactInfo .getInContact .contactForm {
+  background-color: #313131;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,26 +274,42 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0 20px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia img {
-  width: 100%;
+.container .headerContainer .contactInfo .getInContact .contactForm input,
+.container .headerContainer .contactInfo .getInContact .contactForm textarea,
+.container .headerContainer .contactInfo .getInContact .contactForm button {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 25px;
 }
 
-.container .headerContainer .contactInfo .getInContact .contactForm {
-  height: 400px;
-  background-color: #313131;
+.container .headerContainer .contactInfo .getInContact .contactForm textarea {
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 250px;
+  min-height: 100px;
+}
+
+.container .headerContainer .contactInfo .getInContact .contactForm #submit {
+  cursor: pointer;
+  border: none;
+  background-color: #faea24;
 }
 
 .workedIn {
   width: 100%;
   background-image: url("../assets/About_Renders/about_Texture_LB03_v02.png");
-  background-position: top;
+  background-position: top -10px center;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -378,11 +456,30 @@
           flex-direction: row;
 }
 
+#contact .firstRow .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #contact .firstRow .socialMedia img {
   width: 50px;
 }
 
 #contact .secondRow {
+  font-size: 12px;
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,5 +498,130 @@
 
 #contact .secondRow a {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-image: unset;
+  }
+  .container .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: unset;
+  }
+  .container .headerContainer .sidePanel {
+    width: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container .headerContainer .sidePanel #navBar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .container .headerContainer .sidePanel #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .headerContainer .sidePanel #navBar #openResponsiveMenu img {
+    width: 100px;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 4;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons .button img {
+    width: 250px;
+    margin: 0 5px;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 100px;
+  }
+  .container .headerContainer .sidePanel #navBar .navButtons {
+    display: none;
+  }
+  .container .headerContainer .sidePanel a {
+    width: unset;
+  }
+  .container .headerContainer .contactInfo .getInContact {
+    width: 95%;
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=aboutStyles.css.map */

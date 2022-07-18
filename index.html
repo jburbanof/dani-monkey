@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1 user-scalable=no"
+			content="width=device-width,initial-scale=1user-scalable=no"
 		/>
 		<link rel="stylesheet" href="styles.css" />
 		<title>Dani monkey</title>
@@ -13,10 +13,45 @@
 	<body>
 		<header id="landing">
 			<nav id="navBar">
+				<button id="openResponsiveMenu">
+					<img src="./assets/GeneralAssets/button_menu_logos.png" alt="" />
+				</button>
+				<div class="responsiveMenu">
+					<button id="closeResponsiveMenu">
+						<img src="./assets/GeneralAssets/button_close_logos.png" alt="" />
+					</button>
+					<img
+						class="dmLogo"
+						src="./assets/GeneralAssets/Dani_Monkey_V02_B.png"
+						alt=""
+					/>
+					<ul class="navButtons">
+						<li>
+							<a class="button" href="./animation">
+								<img src="./assets/GeneralAssets/header_animation_V02.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="button" href="./story-board">
+								<img src="./assets/GeneralAssets/header_storybord_V02.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="button" href="./collectiveMonkey">
+								<img src="./assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="button" href="./about/">
+								<img src="./assets/GeneralAssets/header_WDani_V02.png" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
 				<img
+					class="dmLogo"
 					src="./assets/GeneralAssets/Dani_Monkey_V02_B.png"
 					alt=""
-					width="230px"
 				/>
 
 				<ul class="navButtons">
@@ -61,23 +96,21 @@
 			<article class="introContainer">
 				<div class="profileImgContainer">
 					<img
-						src="./assets/Frontpage_Renders/Monkeyprofile_01_B_W2.png"
+						id="profileImg"
+						src="./assets/Frontpage_Renders/monkeyprofile_01_b_w2_optimized.png"
 						alt=""
 						width="100%"
 					/>
 				</div>
 
 				<div id="intro">
+					<p>Hey there!</p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis
-						distinctio, modi sit sed eum atque vitae quos placeat aut quas eos non
-						expedita nam, voluptatum molestiae! Architecto, dignissimos consequuntur.
+						It’s me Danilo Sanchez, but my friends call me DaniMonkey. I am a
+						professional animator and this is my website. Feel free to nose around my
+						projects.
 					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis
-						distinctio, modi sit sed eum atque vitae quos placeat aut quas eos non
-						expedita nam, voluptatum molestiae! Architecto, dignissimos consequuntur.
-					</p>
+					<p>Have fun and remember: don’t feed the monkeys, bye!</p>
 				</div>
 			</article>
 		</header>
@@ -144,25 +177,26 @@
 						<h3>Danilo (DaniMonkey) Sanchez</h3>
 						<p>Storyboarder // 2D animator// independent Director</p>
 						<div class="contactInfo">
-							<p>monkeytottem@gmail.com</p>
-							<p>+1(778)2329918</p>
+							<p>monkeytottem@gmail.com +1(778)2329918</p>
 						</div>
 					</div>
 					<div class="socialMedia">
 						<a href=""
-							><img src="../assets/GeneralAssets/footer_Linkedin_logos.png" alt=""
+							><img src="./assets/GeneralAssets/footer_Linkedin_logos.png" alt=""
 						/></a>
 						<a href=""
-							><img src="../assets/GeneralAssets/footer_instagram_logos.png" alt=""
+							><img src="./assets/GeneralAssets/footer_instagram_logos.png" alt=""
 						/></a>
 						<a href=""
-							><img src="../assets/GeneralAssets/footer_vimeo_logos.png" alt=""
+							><img src="./assets/GeneralAssets/footer_vimeo_logos.png" alt=""
 						/></a>
 					</div>
 				</div>
 				<div class="secondRow">
 					<h4>Webside by <a href="">Julian Burbano</a> /Design by DaniMonkey</h4>
-					<p>Privacy policy terms of rvicet // DaniMonkey 2022 all rights reserved</p>
+					<p>
+						Privacy policy terms of rvicet // DaniMonkey 2022 all rights reserved
+					</p>
 				</div>
 			</footer>
 		</main>

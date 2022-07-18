@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<link rel="stylesheet" href="animationsStyles.css" />
 		<title>Animation</title>
 	</head>
@@ -11,6 +11,38 @@
 		<div class="container">
 			<div class="sidePanel">
 				<nav id="navBar">
+					<button id="openResponsiveMenu">
+						<img src="../assets/GeneralAssets/button_menu_logos.png" alt="" />
+					</button>
+					<div class="responsiveMenu">
+						<button id="closeResponsiveMenu">
+							<img src="../assets/GeneralAssets/button_close_logos.png" alt="" />
+						</button>
+						<a href="../index.html">
+							<img
+								src="../assets/GeneralAssets/Dani_Monkey_V02_B.png"
+								alt=""
+								width="180px"
+							/>
+						</a>
+						<ul class="navButtons">
+							<li>
+								<a class="button" href="../story-board">
+									<img src="../assets/GeneralAssets/header_storybord_V02.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="button" href="../collectiveMonkey">
+									<img src="../assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="button" href="../about/">
+									<img src="../assets/GeneralAssets/header_WDani_V02.png" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
 					<a href="../index.html">
 						<img
 							src="../assets/GeneralAssets/Dani_Monkey_V02_B.png"
@@ -20,15 +52,16 @@
 					</a>
 					<ul class="navButtons">
 						<li>
-							<a class="button" href="../collectiveMonkey">
-								<img src="../assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
-							</a>
-						</li>
-						<li>
 							<a class="button" href="../story-board">
 								<img src="../assets/GeneralAssets/header_storybord_V02.png" alt="" />
 							</a>
 						</li>
+						<li>
+							<a class="button" href="../collectiveMonkey">
+								<img src="../assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
+							</a>
+						</li>
+
 						<li>
 							<a class="button" href="../about/">
 								<img src="../assets/GeneralAssets/header_WDani_V02.png" alt="" />
@@ -45,11 +78,15 @@
 						width="100%"
 					/>
 				</div>
-				<p>
-					Animation is my first passion I have work in in different 2D and #D
-					productions as a 2D animator so below you can find my 2d animator demo-reel
-					and my Animation industry demo- reel.
-				</p>
+				<div class="sectionDescription">
+					<p>Welcome again!</p>
+					<p>
+						I love to tell stories with animation. You will see small storytelling
+						gems I have created from scratch. You will see my work with
+						large-than-life companies. They are all done with the same love.
+					</p>
+				</div>
+
 				<article class="project">
 					<div class="projectDescription">
 						<img
@@ -120,8 +157,7 @@
 					<h3>Danilo (DaniMonkey) Sanchez</h3>
 					<p>Storyboarder // 2D animator// independent Director</p>
 					<div class="contactInfo">
-						<p>monkeytottem@gmail.com</p>
-						<p>+1(778)2329918</p>
+						<p>monkeytottem@gmail.com +1(778)2329918</p>
 					</div>
 				</div>
 				<div class="socialMedia">
@@ -143,3 +179,4 @@
 		</footer>
 	</body>
 </html>
+<script type="text/javascript" src="../scripts.js"></script>

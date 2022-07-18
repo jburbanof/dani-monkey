@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<link rel="stylesheet" href="./sbStyles.css" />
 		<title>Story Board</title>
 	</head>
@@ -11,6 +11,38 @@
 		<div class="container">
 			<div class="sidePanel">
 				<nav id="navBar">
+					<button id="openResponsiveMenu">
+						<img src="../assets/GeneralAssets/button_menu_logos.png" alt="" />
+					</button>
+					<div class="responsiveMenu">
+						<button id="closeResponsiveMenu">
+							<img src="../assets/GeneralAssets/button_close_logos.png" alt="" />
+						</button>
+						<a href="../index.html">
+							<img
+								src="../assets/GeneralAssets/Dani_Monkey_V02_B.png"
+								alt=""
+								width="180px"
+							/>
+						</a>
+						<ul class="navButtons">
+							<li>
+								<a class="button" href="../animation">
+									<img src="../assets/GeneralAssets/header_animation_V02.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="button" href="../collectiveMonkey">
+									<img src="../assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a class="button" href="../about/">
+									<img src="../assets/GeneralAssets/header_WDani_V02.png" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
 					<a href="../index.html">
 						<img
 							src="../assets/GeneralAssets/Dani_Monkey_V02_B.png"
@@ -46,12 +78,17 @@
 						width="100%"
 					/>
 				</div>
-				<p>
-					I have been building my abilities as a storyboarder, I currently work as a
-					storyboard revisionist, always try to keep growing. The demo-reel show 3
-					project one after the other in each project you can see a one minute
-					animatic and 20 thumbnails of the project.
+				<div class="sectionDescription">
+					<p>
+					Storyboarding encompasses my joy for recreating stories through captivating
+					image sequences.
 				</p>
+				<p>
+					The next demo-reels show 3 projects one after the other. In each one you
+					can see a one minute animatic and 20 thumbnails of the project.
+				</p>
+				</div>
+				
 				<article class="project">
 					<div class="projectDescription">
 						<p class="description">
@@ -165,7 +202,6 @@
 					</div>
 				</article>
 				<article class="project">
-					<h3 style="color: white">Lorem ipsum dolor sit amet consectetur.</h3>
 					<div class="projectDescription">
 						<p class="description">
 							The coin Collector is a proyectos created as part of the peach process
@@ -287,8 +323,7 @@
 					<h3>Danilo (DaniMonkey) Sanchez</h3>
 					<p>Storyboarder // 2D animator// independent Director</p>
 					<div class="contactInfo">
-						<p>monkeytottem@gmail.com</p>
-						<p>+1(778)2329918</p>
+						<p>monkeytottem@gmail.com +1(778)2329918</p>
 					</div>
 				</div>
 				<div class="socialMedia">
@@ -310,3 +345,4 @@
 		</footer>
 	</body>
 </html>
+<script type="text/javascript" src="../scripts.js"></script>

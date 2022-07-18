@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cousine", monospace;
+  color: #353533;
 }
 
 html {
@@ -22,10 +23,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#brush-shape {
-  color: #faea24;
 }
 
 .section {
@@ -80,6 +77,10 @@ body {
           box-sizing: border-box;
 }
 
+#landing #navBar .dmLogo {
+  width: 180px;
+}
+
 #landing #navBar .navButtons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +92,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 #landing #navBar .navButtons .button {
@@ -111,8 +112,16 @@ body {
 }
 
 #landing #navBar .navButtons .button img {
-  width: 175px;
+  width: 130px;
   margin: 0 5px;
+}
+
+#landing #navBar #openResponsiveMenu {
+  display: none;
+}
+
+#landing #navBar .responsiveMenu {
+  display: none;
 }
 
 #landing .introContainer {
@@ -160,7 +169,8 @@ body {
 }
 
 #landing .introContainer #intro p {
-  margin: 50px 0;
+  margin: 50px;
+  font-size: 20px;
 }
 
 #portfolio {
@@ -274,7 +284,7 @@ body {
 
 #contact {
   width: 100%;
-  background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+  background-image: url("./assets/Frontpage_Renders/Button_V02.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -329,11 +339,30 @@ body {
           flex-direction: row;
 }
 
+#contact .firstRow .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #contact .firstRow .socialMedia img {
   width: 50px;
 }
 
 #contact .secondRow {
+  font-size: 12px;
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,5 +381,189 @@ body {
 
 #contact .secondRow a {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  #landing {
+    height: unset;
+    padding: 0px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #landing #navBar {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
+  }
+  #landing #navBar .dmLogo {
+    width: 180px;
+  }
+  #landing #navBar .navButtons {
+    display: none;
+  }
+  #landing #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar #openResponsiveMenu img {
+    width: 100px;
+  }
+  #landing #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 4;
+  }
+  #landing #navBar .responsiveMenu .navButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+  }
+  #landing #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #landing #navBar .responsiveMenu .navButtons .button img {
+    width: 250px !important;
+    margin: 0 5px;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 100px;
+  }
+  #landing .introContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #landing .introContainer .profileImgContainer {
+    width: 80%;
+  }
+  #landing .introContainer #intro {
+    width: 100%;
+    margin-left: unset;
+    padding: 0 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-top: 20px solid black;
+  }
+  #portfolio .projectsLinks .portfolioLink {
+    width: 300px;
+    margin: 50px;
+  }
+  #collective {
+    position: relative;
+    padding-bottom: 250px;
+  }
+  #collective .sectionHeader {
+    overflow-x: unset;
+    z-index: 4;
+  }
+  #collective .collectiveLinks {
+    margin-top: 90px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+    z-index: 3;
+  }
+  #collective .collectiveLinks .collectiveLink {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #collective .profilePicture {
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #landing {
+    padding: 0;
+  }
+  #landing .dmLogo {
+    width: 180px !important;
+  }
+  #landing .button img {
+    width: 130px !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

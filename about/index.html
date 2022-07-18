@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=, initial-scale=1.0" />
+		<meta name="viewport" content="width=,initial-scale=1" />
 		<link rel="stylesheet" href="./aboutStyles.css" />
 		<title>About Dani</title>
 	</head>
@@ -12,6 +12,38 @@
 			<div class="headerContainer">
 				<div class="sidePanel">
 					<nav id="navBar">
+						<button id="openResponsiveMenu">
+							<img src="../assets/GeneralAssets/button_menu_logos.png" alt="" />
+						</button>
+						<div class="responsiveMenu">
+							<button id="closeResponsiveMenu">
+								<img src="../assets/GeneralAssets/button_close_logos.png" alt="" />
+							</button>
+							<a href="../index.html">
+								<img
+									src="../assets/GeneralAssets/Dani_Monkey_V02_B.png"
+									alt=""
+									width="250px"
+								/>
+							</a>
+							<ul class="navButtons">
+								<li>
+									<a class="button" href="../animation">
+										<img src="../assets/GeneralAssets/header_animation_V02.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a class="button" href="../story-board">
+										<img src="../assets/GeneralAssets/header_storybord_V02.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a class="button" href="../collectiveMonkey">
+										<img src="../assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
+									</a>
+								</li>
+							</ul>
+						</div>
 						<a href="../index.html">
 							<img
 								src="../assets/GeneralAssets/Dani_Monkey_V02_B.png"
@@ -21,8 +53,8 @@
 						</a>
 						<ul class="navButtons">
 							<li>
-								<a class="button" href="../collectiveMonkey/">
-									<img src="../assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
+								<a class="button" href="../animation/">
+									<img src="../assets/GeneralAssets/header_animation_V02.png" alt="" />
 								</a>
 							</li>
 							<li>
@@ -31,8 +63,8 @@
 								</a>
 							</li>
 							<li>
-								<a class="button" href="../animation/">
-									<img src="../assets/GeneralAssets/header_animation_V02.png" alt="" />
+								<a class="button" href="../collectiveMonkey/">
+									<img src="../assets/GeneralAssets/header_Cmonkey_V02.png" alt="" />
 								</a>
 							</li>
 						</ul>
@@ -46,14 +78,22 @@
 							width="100%"
 						/>
 					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla
-						corporis distinctio odio eligendi, placeat, officia possimus obcaecati
-						eius deleniti consectetur ea amet incidunt quas enim neque quia assumenda
-						non ab? Ducimus quaerat accusantium repellendus omnis ad modi fugiat sit
-						quisquam eaque officia voluptatibus architecto, unde ut dicta, excepturi
-						culpa.
-					</p>
+					<div class="profile">
+						<p>
+							My professional journey in this industry started 8 years ago, and 5 years
+							ago I moved from my hometown in Colombia, to Vancouver where I currently
+							live and work. While working in the animation industry during the day, I
+							have also collaborated on two independent short-films, as an animator
+							director in one, and a co- director in the other one.
+						</p>
+						<p>
+							Besides the animation industry I also really enjoy being involved in the
+							local art community, and seeing everyone's unique creative talents. I’m
+							always excited to take on new projects and collaborating. So if you have
+							any ideas, let’s work together.
+						</p>
+					</div>
+
 					<div class="getInContact">
 						<div class="contactImages">
 							<div class="contactLinks">
@@ -64,7 +104,7 @@
 								/>
 								<div class="socialMedia">
 									<a href=""
-										><img src="../assets/GeneralAssets/footer_Linkedin_logos.png" alt=""
+										><img src="../assets/GeneralAssets/footer_Linkedin_logos .png" alt=""
 									/></a>
 									<a href=""
 										><img src="../assets/GeneralAssets/footer_instagram_logos.png" alt=""
@@ -80,7 +120,23 @@
 								width="50%"
 							/>
 						</div>
-						<div class="contactForm"></div>
+						<form
+							class="contactForm"
+							action="https://formspree.io/f/xknkqrww"
+							method="POST"
+						>
+							<input type="text" name="name" placeholder="Name" required />
+							<input type="email" name="e-mail" placeholder="e-mail" required />
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Message"
+								cols="30"
+								rows="5"
+								required
+							></textarea>
+							<button type="submit" id="submit">Send</button>
+						</form>
 					</div>
 				</section>
 			</div>
@@ -93,7 +149,7 @@
 				/>
 				<div class="productions">
 					<img
-						src="../assets/About_Renders/Production_SOL_logo.png"
+						src="../assets/About_Renders/11Production_SOL_ (1).png"
 						alt=""
 						width="200px"
 					/>
@@ -148,8 +204,7 @@
 						<h3>Danilo (DaniMonkey) Sanchez</h3>
 						<p>Storyboarder // 2D animator// independent Director</p>
 						<div class="contactInfo">
-							<p>monkeytottem@gmail.com</p>
-							<p>+1(778)2329918</p>
+							<p>monkeytottem@gmail.com +1(778)2329918</p>
 						</div>
 					</div>
 					<div class="socialMedia">
@@ -166,9 +221,12 @@
 				</div>
 				<div class="secondRow">
 					<h4>Webside by <a href="">Julian Burbano</a> /Design by DaniMonkey</h4>
-					<p>Privacy policy terms of rvicet // DaniMonkey 2022 all rights reserved</p>
+					<p>
+						Privacy policy terms of rvicet // DaniMonkey 2022 all rights reserved
+					</p>
 				</div>
 			</footer>
 		</div>
 	</body>
 </html>
+<script type="text/javascript" src="../scripts.js"></script>
