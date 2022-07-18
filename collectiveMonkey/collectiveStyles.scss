@@ -314,7 +314,10 @@ main {
 			}
 		}
 		.content {
+			max-height: unset;
 			overflow: unset;
+			overflow-x: hidden;
+
 			#header {
 				display: none;
 			}
