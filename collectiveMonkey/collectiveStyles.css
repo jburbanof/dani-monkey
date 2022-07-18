@@ -538,7 +538,9 @@ main .CMProject .profilePicture {
     width: unset;
   }
   body .content {
+    max-height: unset;
     overflow: unset;
+    overflow-x: hidden;
   }
   body .content #header {
     display: none;
