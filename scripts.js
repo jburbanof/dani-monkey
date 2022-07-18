@@ -3,11 +3,7 @@ const navBar = document.getElementById("navBar");
 const responsiveMenu = document.querySelector(".responsiveMenu");
 const openResponsiveMenu = document.getElementById("openResponsiveMenu");
 const closeResponsiveMenu = document.getElementById("closeResponsiveMenu");
-const videos = Array.from(document.querySelectorAll("video"));
-
-if (window.innerWidth >= 425 && profileImgContainer) {
-	profileImgContainer.style.height = `calc(100vh - ${navBar.offsetHeight}px)`;
-}
+const videos = Array.from(document.querySelectorAll("iframe"));
 closeResponsiveMenu.addEventListener("click", () => {
 	responsiveMenu.style.display = "none";
 });

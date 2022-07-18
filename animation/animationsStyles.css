@@ -207,7 +207,7 @@
   height: calc(100% - 40px);
 }
 
-.content .project video {
+.content .project iframe {
   width: 90%;
   max-width: 600px;
   background-color: black;
@@ -450,6 +450,16 @@
   }
   .content .last {
     margin-bottom: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .projectDescription {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: unset !important;
   }
 }
 /*# sourceMappingURL=animationsStyles.css.map */

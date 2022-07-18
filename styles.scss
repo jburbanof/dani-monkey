@@ -13,7 +13,6 @@ svg {
 	filter: drop-shadow(3px 5px 2px rgb(0, 0, 0));
 }
 body {
-	margin-top: 20px;
 	position: relative;
 	background-color: #dfe0e2;
 	background-image: url("./assets/Frontpage_Renders/BG_yellow_Frontpage_01.png");
@@ -34,7 +33,7 @@ body {
 	padding: 0 50px;
 	box-sizing: border-box;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
 	#navBar {
@@ -85,7 +84,7 @@ body {
 			img {
 				width: auto;
 				height: auto;
-				max-height: calc(100vh - 150px);
+				max-height: calc(100vh - 160px);
 			}
 		}
 		#intro {

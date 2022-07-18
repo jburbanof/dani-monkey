@@ -70,7 +70,16 @@ body {
 		}
 	}
 }
-
+.description {
+	background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding: 20px;
+	p {
+		margin: 10px 0;
+	}
+}
 .content {
 	width: 100%;
 	display: flex;
@@ -82,16 +91,20 @@ body {
 	.projectsMenu {
 		display: none;
 	}
-	.description {
-		background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: right top;
-		padding: 20px;
-		p {
-			margin: 10px 0;
+	.projectDescription {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+
+		img {
+			width: auto;
+			max-width: 200px;
+			height: auto;
+			max-height: 150px;
 		}
 	}
+
 	#header {
 		width: 100%;
 		padding-top: 20px;
@@ -137,20 +150,25 @@ main {
 			align-items: stretch;
 			flex-direction: row;
 		}
-		video {
+		iframe {
 			width: 90%;
 			max-width: 600px;
 			background-color: black;
 			margin: 40px 0;
 		}
 		.projectDetails {
+			width: 100%;
 			margin-top: 40px;
 			background-image: url("../assets/CMonkey_render/Cmonkey_textBox_In_box_v02.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: top right;
-			color: white;
 			padding: 20px;
+			h3,
+			p {
+				color: #bfbfbf;
+				margin: 10px 0;
+			}
 		}
 		.projectPictures {
 			margin-top: 20px;
@@ -166,7 +184,7 @@ main {
 				justify-content: center;
 				align-items: center;
 				flex-direction: column;
-				margin: 20px;
+				margin: 40px;
 			}
 		}
 		.profilePicture {

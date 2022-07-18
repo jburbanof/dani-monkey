@@ -16,7 +16,6 @@ svg {
 }
 
 body {
-  margin-top: 20px;
   position: relative;
   background-color: #dfe0e2;
   background-image: url("./assets/Frontpage_Renders/BG_yellow_Frontpage_01.png");
@@ -50,9 +49,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -161,7 +160,7 @@ body {
 #landing .introContainer .profileImgContainer img {
   width: auto;
   height: auto;
-  max-height: calc(100vh - 150px);
+  max-height: calc(100vh - 160px);
 }
 
 #landing .introContainer #intro {

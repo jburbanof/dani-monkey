@@ -110,18 +110,19 @@ body {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			flex-direction: row;
-			height: 150px;
+			flex-direction: column;
 			.description {
 				background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: right top;
 				padding: 20px;
-				height: calc(100% - 40px);
+				p {
+					margin: 10px 0;
+				}
 			}
 		}
-		video {
+		iframe {
 			width: 90%;
 			max-width: 600px;
 			background-color: black;

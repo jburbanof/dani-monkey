@@ -132,6 +132,18 @@ body .sidePanel a {
           align-items: center;
 }
 
+.description {
+  background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 20px;
+}
+
+.description p {
+  margin: 10px 0;
+}
+
 .content {
   width: 100%;
   display: -webkit-box;
@@ -155,16 +167,27 @@ body .sidePanel a {
   display: none;
 }
 
-.content .description {
-  background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right top;
-  padding: 20px;
+.content .projectDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.content .description p {
-  margin: 10px 0;
+.content .projectDescription img {
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
 }
 
 .content #header {
@@ -253,7 +276,7 @@ main .CMProject .projectDescription {
           flex-direction: row;
 }
 
-main .CMProject video {
+main .CMProject iframe {
   width: 90%;
   max-width: 600px;
   background-color: black;
@@ -261,13 +284,19 @@ main .CMProject video {
 }
 
 main .CMProject .projectDetails {
+  width: 100%;
   margin-top: 40px;
   background-image: url("../assets/CMonkey_render/Cmonkey_textBox_In_box_v02.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
-  color: white;
   padding: 20px;
+}
+
+main .CMProject .projectDetails h3,
+main .CMProject .projectDetails p {
+  color: #bfbfbf;
+  margin: 10px 0;
 }
 
 main .CMProject .projectPictures {
@@ -305,7 +334,7 @@ main .CMProject .projectPictures .projectPicture {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px;
+  margin: 40px;
 }
 
 main .CMProject .profilePicture {

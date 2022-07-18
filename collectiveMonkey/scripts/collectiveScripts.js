@@ -8,7 +8,7 @@ const openResponsiveMenu = document.getElementById("openResponsiveMenu");
 const closeResponsiveMenu = document.getElementById("closeResponsiveMenu");
 const header = document.getElementById("header");
 const headerBackground = new Image();
-const videos = Array.from(document.querySelectorAll("video"));
+const videos = Array.from(document.querySelectorAll("iframe"));
 
 closeResponsiveMenu.addEventListener("click", () => {
 	responsiveMenu.style.display = "none";

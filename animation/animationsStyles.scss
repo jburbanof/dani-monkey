@@ -112,7 +112,7 @@ $details-color: #ffd046;
 				height: calc(100% - 40px);
 			}
 		}
-		video {
+		iframe {
 			width: 90%;
 			max-width: 600px;
 			background-color: black;
@@ -268,5 +268,11 @@ $details-color: #ffd046;
 		.last {
 			margin-bottom: 300px;
 		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.projectDescription {
+		flex-direction: column !important;
+		height: unset !important;
 	}
 }
