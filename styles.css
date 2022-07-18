@@ -59,7 +59,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
 }
 
 #landing #navBar {
@@ -169,7 +168,8 @@ body {
 }
 
 #landing .introContainer #intro p {
-  margin: 50px 0;
+  margin: 50px;
+  font-size: 20px;
 }
 
 #portfolio {
@@ -474,7 +474,7 @@ body {
             flex-direction: column;
   }
   #landing #navBar .responsiveMenu .navButtons .button img {
-    width: 175px;
+    width: 250px !important;
     margin: 0 5px;
   }
   #landing #navBar .responsiveMenu #closeResponsiveMenu {

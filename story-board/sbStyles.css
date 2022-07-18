@@ -151,8 +151,9 @@ body {
           flex-direction: column;
 }
 
-.content p {
-  padding: 40px;
+.content .sectionDescription p {
+  font-size: 20px;
+  padding: 15px 40px;
 }
 
 .content .header {
@@ -436,7 +437,7 @@ body {
             flex-direction: column;
   }
   .container .sidePanel #navBar .responsiveMenu .navButtons .button img {
-    width: 175px;
+    width: 250px;
     margin: 0 5px;
   }
   .container .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {

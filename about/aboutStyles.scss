@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+$details-color: #faea24;
 * {
 	margin: 0;
 	padding: 0;
@@ -17,7 +18,7 @@
 	flex-direction: column;
 	overflow: hidden;
 	.headerContainer {
-		background-image: url("../assets/About_Renders/Monkeyprofile_02_V02.png");
+		background-image: url("../assets/About_Renders/monkeyprofile_02_v02_optimized.png");
 		background-size: 300px;
 		background-repeat: no-repeat;
 		background-position: left bottom;
@@ -62,7 +63,7 @@
 						flex-direction: column;
 						margin: 2px 0;
 						img {
-							width: 175px;
+							width: 180px;
 							margin: 0 5px;
 						}
 					}
@@ -81,10 +82,13 @@
 			justify-content: start;
 			align-items: center;
 			flex-direction: column;
-
-			p {
-				padding: 40px;
+			.profile {
+				p {
+					font-size: 20px;
+					padding: 15px 40px;
+				}
 			}
+
 			.header {
 				width: 100%;
 				display: flex;
@@ -104,17 +108,32 @@
 						position: relative;
 						width: 50%;
 						.socialMedia {
+							width: 100%;
 							position: absolute;
 							bottom: 5px;
 							left: 0;
 							display: flex;
-							justify-content: center;
-							align-items: center;
+							justify-content: space-between;
+							align-items: end;
 							flex-direction: row;
-							padding: 0 20px;
+							padding: 10px;
+							box-sizing: border-box;
+							a {
+								width: calc(33% - 20px);
+								display: flex;
+								justify-content: center;
+								align-items: end;
+								flex-direction: row;
+								border-radius: 50%;
+							}
 							img {
 								width: 100%;
+								margin: 0 5px;
 							}
+						}
+						.socialMedia a:hover {
+							box-shadow: 0 0 10px rgb(0, 0, 0);
+							width: calc(33% - 10px);
 						}
 					}
 				}
@@ -135,7 +154,7 @@
 						box-sizing: border-box;
 						font-size: 25px;
 					}
-					
+
 					textarea {
 						max-width: 80%;
 						min-width: 80%;
@@ -145,6 +164,7 @@
 					#submit {
 						cursor: pointer;
 						border: none;
+						background-color: $details-color;
 					}
 				}
 			}
@@ -301,7 +321,7 @@
 								align-items: end;
 								flex-direction: column;
 								img {
-									width: 175px;
+									width: 250px;
 									margin: 0 5px;
 								}
 							}
