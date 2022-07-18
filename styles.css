@@ -15,6 +15,7 @@ svg {
 }
 
 body {
+  margin-top: 20px;
   position: relative;
   background-color: #dfe0e2;
   background-image: url("./assets/Frontpage_Renders/BG_yellow_Frontpage_01.png");
