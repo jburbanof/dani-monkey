@@ -7,11 +7,10 @@
 }
 
 body {
-  background-image: url("../assets/Storyboard_Render/Storyboard_Texture_v02.png");
+  background-image: url("../assets/Storyboard_Render/Cmonkey_Back_texture_v02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #dfe0e2;
 }
 
 .container {
@@ -195,15 +194,16 @@ body {
 }
 
 .content .project .projectDescription {
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -471,18 +471,14 @@ body {
     width: 90%;
   }
   .content .project .projectDescription {
-    width: 70%;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: unset;
   }
   .content .project .projectDescription img {
     width: 100%;
-  }
-  .content .project .projectDescription .description {
-    margin: 20px 0;
   }
 }
 /*# sourceMappingURL=sbStyles.css.map */

@@ -8,11 +8,10 @@ $details-color: #fbea2c;
 	color: #353533;
 }
 body {
-	background-image: url("../assets/Storyboard_Render/Storyboard_Texture_v02.png");
+	background-image: url("../assets/Storyboard_Render/Cmonkey_Back_texture_v02.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-color: #dfe0e2;
 }
 .container {
 	width: 100%;
@@ -107,9 +106,10 @@ body {
 		padding: 20px;
 		margin: 20px;
 		.projectDescription {
+			background-color: black;
 			display: flex;
 			justify-content: space-between;
-			align-items: center;
+			align-items: space-between;
 			flex-direction: column;
 			.description {
 				background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
@@ -279,14 +279,10 @@ body {
 		.project {
 			width: 90%;
 			.projectDescription {
-				width: 70%;
-				flex-direction: column-reverse;
+				flex-direction: column;
 				height: unset;
 				img {
 					width: 100%;
-				}
-				.description {
-					margin: 20px 0;
 				}
 			}
 		}
