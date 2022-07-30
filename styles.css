@@ -120,6 +120,7 @@ body {
 }
 
 #landing #navBar .navButtons .button .face {
+  visibility: hidden;
   z-index: 2;
   position: absolute;
   -webkit-transition: bottom 0.5s ease-out;
