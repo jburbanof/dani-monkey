@@ -29,14 +29,14 @@ const hoverAnimation = (element, gap, imgHeight, img) => {
 		img.style.bottom = `calc( -${gap} - ${imgHeight} )`;
 	});
 };
-
-setTimeout(() => {
+window.addEventListener("load", () => {
 	faces.forEach((face) => {
 		const imgHeight = window.getComputedStyle(face)["height"];
 		const buttonTag = face.nextElementSibling;
 		const gap = window.getComputedStyle(buttonTag)["height"];
+		face.style.visibility = "unset";
 		face.style.bottom = `calc( -${gap} - ${imgHeight} )`;
 		hoverAnimation(face, gap, imgHeight, face);
 		hoverAnimation(buttonTag, gap, imgHeight, face);
 	});
-}, 150);
+});
