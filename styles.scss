@@ -52,13 +52,22 @@ body {
 			list-style-type: none;
 			margin-top: 10px;
 			.button {
+				overflow: hidden;
 				display: flex;
-				justify-content: center;
-				align-items: end;
+				justify-content: end;
+				align-items: center;
 				flex-direction: column;
+				position: relative;
+				height: 150px;
 				img {
-					width: 130px;
+					width: 150px;
 					margin: 0 5px;
+					z-index: 3;
+				}
+				.face {
+					z-index: 2;
+					position: absolute;
+					transition: bottom 0.5s ease-out
 				}
 			}
 		}
@@ -339,15 +348,14 @@ body {
 }
 @media screen and (max-width: 1024px) {
 	#landing {
-		padding: 0 ;
+		padding: 0;
 		.dmLogo {
 			width: 180px !important;
 		}
 		.button {
-		img {
-			width: 130px !important;
+			img {
+				width: 130px !important;
+			}
 		}
 	}
-	}
-	
 }
