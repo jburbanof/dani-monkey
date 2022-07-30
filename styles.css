@@ -95,24 +95,35 @@ body {
 }
 
 #landing #navBar .navButtons .button {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  height: 150px;
 }
 
 #landing #navBar .navButtons .button img {
-  width: 130px;
+  width: 150px;
   margin: 0 5px;
+  z-index: 3;
+}
+
+#landing #navBar .navButtons .button .face {
+  z-index: 2;
+  position: absolute;
+  -webkit-transition: bottom 0.5s ease-out;
+  transition: bottom 0.5s ease-out;
 }
 
 #landing #navBar #openResponsiveMenu {
