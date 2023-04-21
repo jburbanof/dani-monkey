@@ -215,7 +215,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
 	* {
 		overflow-x: hidden;
 	}
@@ -259,7 +259,7 @@ body {
 				justify-content: center;
 				align-items: center;
 				flex-direction: column;
-				z-index: 4;
+				z-index: 5;
 				.navButtons {
 					display: flex;
 					justify-content: center;
@@ -267,6 +267,9 @@ body {
 					flex-direction: column;
 					list-style-type: none;
 					margin-top: 40px;
+					li {
+						overflow: hidden; 
+					};
 					.button {
 						margin: 20px 0;
 						display: flex;
