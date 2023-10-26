@@ -22,6 +22,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+}
 
 .section {
   display: flex;
@@ -106,10 +112,9 @@ body {
   margin-left: 50px;
 }
 #landing .introContainer #intro p {
-  margin: 50px;
+  margin: 35px;
   font-size: 20px;
 }
-
 #portfolio {
   background-color: #828385;
 }
