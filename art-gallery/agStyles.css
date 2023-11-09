@@ -16,8 +16,9 @@
   align-items: start;
   flex-direction: column;
   overflow: hidden;
-  position: relative;
-  padding-bottom: 1em;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto 1fr auto;
 }
 .container .headerContainer {
   background-size: 300px;
