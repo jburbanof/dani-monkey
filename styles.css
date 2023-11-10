@@ -103,11 +103,14 @@ body {
   max-height: calc(100vh - 160px);
 }
 #landing .introContainer #intro {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 #landing .introContainer #intro p {
-  margin: 50px;
-  font-size: 20px;
+  margin: 20px;
+  font-size: 18px;
+}
+#landing .introContainer .video {
+  text-align: center;
 }
 
 #portfolio {
@@ -220,7 +223,7 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1023px) {
   * {
     overflow-x: hidden;
   }
@@ -351,7 +354,7 @@ body {
     bottom: 0;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   #landing {
     padding: 0;
   }
@@ -360,5 +363,8 @@ body {
   }
   #landing .button img {
     width: 130px !important;
+  }
+  #landing .introContainer #intro p {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=styles.css.map */
