@@ -1,7 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Cousine", monospace;
   color: #353533;
 }
@@ -20,10 +22,11 @@ body {
   align-items: start;
   flex-direction: column;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
 }
-
 .container .headerContainer {
   background-size: 300px;
   background-repeat: no-repeat;
@@ -33,8 +36,14 @@ body {
   align-items: start;
   flex-direction: row;
 }
-
-.container .headerContainer .sidePanel {
+.container .headerContainer .contactInfo {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.container .sidePanel {
   height: 100%;
   width: 350px;
   display: flex;
@@ -42,8 +51,13 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-.container .headerContainer .sidePanel #navBar {
+.container .sidePanel a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container #navBar {
   display: flex;
   width: 100%;
   align-items: center;
@@ -53,16 +67,13 @@ body {
   padding-top: 40px;
   margin-bottom: 40px;
 }
-
-.container .headerContainer .sidePanel #navBar #openResponsiveMenu {
+.container #openResponsiveMenu {
   display: none;
 }
-
-.container .headerContainer .sidePanel #navBar .responsiveMenu {
+.container .responsiveMenu {
   display: none;
 }
-
-.container .headerContainer .sidePanel #navBar .navButtons {
+.container .navButtons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,41 +82,22 @@ body {
   flex-direction: column;
   padding: 0;
 }
-
-.container .headerContainer .sidePanel #navBar .navButtons .button {
+.container .navButtons .button {
   display: flex;
   justify-content: center;
   align-items: end;
   flex-direction: column;
   margin: 2px 0;
 }
-
-.container .headerContainer .sidePanel #navBar .navButtons .button img {
+.container .navButtons .button img {
   width: 180px;
   margin: 0 5px;
 }
-
-.container .headerContainer .sidePanel a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .headerContainer .contactInfo {
-  width: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-}
-
-.container .headerContainer .contactInfo .profile p {
+.container .profile p {
   font-size: 20px;
   padding: 15px 40px;
 }
-
-.container .headerContainer .contactInfo .header {
+.container .header {
   width: 100%;
   display: flex;
   justify-content: end;
@@ -127,7 +119,6 @@ body {
   flex-direction: column;
   width: 100%;
 }
-
 #contact .firstRow {
   width: 100%;
   display: flex;
@@ -135,26 +126,22 @@ body {
   align-items: center;
   flex-direction: row;
 }
-
 #contact .firstRow .contactInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-
-#contact .firstRow .socialMedia {
+#contact .socialMedia {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-#contact .firstRow .socialMedia img {
+#contact .socialMedia img {
   width: 50px;
 }
-
 #contact .secondRow {
   font-size: 12px;
   margin-top: 100px;
@@ -163,7 +150,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 #contact .secondRow a {
   color: black;
 }
@@ -171,21 +157,25 @@ body {
 .reels {
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   padding: 70px;
-  box-sizing: border-box;
+  margin-bottom: 50px;
   background-image: url(../assets/ArtGallery_Renders/Box_Art_Gall_V02.png);
+  background-size: calc(100% - 40px) calc(100% - 40px);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
 }
 .reels .instagram-media {
-  max-width: 400px;
+  max-width: 300px;
   background: #fff;
   border: 0;
   border-radius: 3px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-  margin: 1px;
+  margin: 0 auto;
   min-width: 326px;
   padding: 0;
   width: 99.375%;
@@ -195,10 +185,12 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     background-image: unset;
+    flex-direction: column;
   }
   .container .headerContainer {
     flex-direction: column;
     background-image: unset;
+    width: 100%;
   }
   .container .headerContainer .sidePanel {
     width: 100%;
@@ -281,6 +273,6 @@ body {
   }
   .container .headerContainer .contactInfo .getInContact {
     width: 95%;
-    margin-bottom: 40px;
+    margin-bottom:  40px;
   }
 }/*# sourceMappingURL=agStyles.css.map */
