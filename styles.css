@@ -22,12 +22,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0%;
-}
 
 .section {
   display: flex;
@@ -112,9 +106,16 @@ body {
   margin-left: 50px;
 }
 #landing .introContainer #intro p {
-  margin: 35px;
+  margin: 15px;
   font-size: 20px;
 }
+
+#landing .introContainer #intro .video {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 #portfolio {
   background-color: #828385;
 }
