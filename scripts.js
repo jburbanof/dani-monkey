@@ -39,4 +39,5 @@ window.addEventListener("load", () => {
 		hoverAnimation(face, gap, imgHeight, face);
 		hoverAnimation(buttonTag, gap, imgHeight, face);
 	});
+	 
 });
