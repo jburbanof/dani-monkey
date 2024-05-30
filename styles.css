@@ -154,20 +154,19 @@ body {
 #collective .sectionHeader img {
   position: absolute;
   top: 5px;
+  z-index: 1;
 }
 #collective .collectiveLinks {
   margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px 70px;
-  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 0;
 }
 #collective .collectiveLinks .collectiveLink {
   width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 #collective .profilePicture {
   width: 600px;
@@ -336,9 +335,9 @@ body {
   }
   #collective .collectiveLinks {
     margin-top: 90px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 50px;
+    grid-gap: 50px; */
     z-index: 3;
   }
   #collective .collectiveLinks .collectiveLink {
