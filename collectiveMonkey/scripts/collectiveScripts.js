@@ -1,7 +1,7 @@
 const params = new Proxy(new URLSearchParams(window.location.search), {
 	get: (searchParams, prop) => searchParams.get(prop),
 });
-let projectId = params.project_id ? params.project_id : "1";
+let projectId = params.project_id ? params.project_id : "3";
 const projects = Array.from(document.querySelectorAll(".CMProject"));
 const responsiveMenu = document.querySelector(".responsiveMenu");
 const openResponsiveMenu = document.getElementById("openResponsiveMenu");
